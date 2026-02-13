@@ -1,87 +1,102 @@
+🛡️ OWASP Web Application Penetration Testing Project
+oject Title
+
 OWASP Juice Shop Web Application Vulnerability Assessment and Penetration Testing
 
 Overview
 
-This repository contains a comprehensive penetration testing project performed on OWASP Juice Shop, aligned with the OWASP Top 10:2025 security risks.
-The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation strategies.
+This repository contains a practical penetration testing project performed on OWASP Juice Shop, mapped to the OWASP Top 10:2025 security categories.
+The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation recommendations.
 
 Project Structure
-JuiceShop-Pentest/
+
+OWASP Web Application Penetration Testing
 ├── Broken_Access_Control
 │   ├── IDOR_Horizontal_Privilege_Escalation
 │   │   ├── Evidence
+│   │   │   ├── idor_original_user_basket.png
+│   │   │   └── idor_other_user_basket.png
 │   │   └── Notes.md
 │   └── IDOR_Vertical_Privilege_Escalation
 │       ├── Evidence
+│       │   ├── idor_admin_panel_access.png
+│       │   ├── idor_hidden_admin_path.png
+│       │   └── idor_payload.png
 │       └── Notes.md
-│
 ├── Injection
 │   ├── Cross_Site_Scripting_XSS
 │   │   ├── Evidence
+│   │   │   ├── xss_execution.png
+│   │   │   └── xss_payload.png
 │   │   └── Notes.md
 │   └── SQL Injection
 │       ├── Evidence
+│       │   ├── sqli_admin_access.png
+│       │   └── sqli_payload.png
 │       └── Notes.md
-│
 ├── Security_Misconfiguration
-│   ├── Screenshots
-│   └── Notes.md
-│
+│   ├── Notes.md
+│   └── Screenshots
+│   │   ├── misconfig_directory_listing.png
+│   │   ├── misconfig_ftp_access.png
+│   │   └── misconfig_md_file_exposure.png
+├── OWASP Web Application Penetration Testing Report.pdf
 ├── Scope.txt
-├── Tools.txt
-└── README.md
+└── Tools.txt
+
 
 Scope of Testing
 
-Target: OWASP Juice Shop
+Target Application: OWASP Juice Shop
 
 Environment: Localhost (http://localhost:3000)
 
-Testing Type: Web Application Penetration Testing (Black-box & Gray-box)
+Testing Type: Web Application Penetration Testing
 
-Tools Used:
+Tools Used
+
 Burp Suite
+
+OWASP ZAP
+
 Nmap
+
 Nikto
+
 Browser Developer Tools
+
 Manual Payload Testing
 
 Vulnerabilities Identified
 A01 – Broken Access Control
 
 IDOR (Horizontal Privilege Escalation)
-Accessed other users’ data by manipulating object IDs.
 
 Vertical Privilege Escalation (Admin Access)
-Discovered and accessed admin functionality without proper authorization.
+
+A02 – Security Misconfiguration
+
+Directory Listing enabled
+
+Sensitive backup/configuration files exposed
 
 A03 – Injection
 
 Cross-Site Scripting (XSS)
-Reflected XSS executed via search input field.
 
-SQL Injection
-Authentication bypass using payload:
+SQL Injection (Authentication Bypass)
 
-' OR 1=1 --
+| Vulnerability              | Impact                         |
+| -------------------------- | ------------------------------ |
+| IDOR                       | User data exposure             |
+| Admin Privilege Escalation | Full admin takeover            |
+| XSS                        | Session hijacking, phishing    |
+| SQL Injection              | Full database compromise       |
+| Security Misconfiguration  | Internal configuration leakage |
 
-A02 – Security Misconfiguration
+Remediation Recommendations
 
-Directory listing enabled on /ftp
-
-Sensitive backup/configuration files exposed
-
-Impact Summary:
-Vulnerability	Impact
-IDOR	User data exposure
-Vertical Privilege Escalation	Full admin control
-XSS	Session hijacking, phishing
-SQL Injection	Full database compromise
-Security Misconfiguration	Internal config and secrets leakage
-
-Remediation Recommendations:
-
-Implement server-side RBAC (Role-Based Access Control)
+Implement server-side Role-Based Access Control (RBAC)
 
 Use prepared statements / ORM for database queries
 
@@ -91,9 +106,9 @@ Disable directory listing
 
 Remove backup files from web root
 
-Follow secure DevSecOps deployment practices
+Follow secure deployment and DevSecOps practices
 
-How to Run OWASP Juice Shop:
+How to Run OWASP Juice Shop
 docker run -p 3000:3000 bkimminich/juice-shop
 
 
@@ -101,12 +116,13 @@ Open in browser:
 
 http://localhost:3000
 
-Author:
+Author
 
 Yuvaraj S
 Certified Penetration Tester (CPT)
+Cybersecurity Enthusiast
 
-Disclaimer:
+Disclaimer
 
-This project is for educational and authorized security testing purposes only.
-Do not test any system without proper permission.
+This project is for educational and authorized testing purposes only.
+Do not test systems without permission.
