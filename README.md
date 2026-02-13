@@ -122,10 +122,12 @@ Open in browser:
 
 http://localhost:3000
 
-Author
+Author:
 
 Yuvaraj S
+
 Certified Penetration Tester (CPT)
+
 Cybersecurity Enthusiast
 
 Disclaimer
