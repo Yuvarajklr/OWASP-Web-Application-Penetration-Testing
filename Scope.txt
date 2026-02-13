@@ -1,0 +1,3 @@
+Target: OWASP Juice Shop
+URL: http://127.0.0.1:3000
+Testing Type: Black-box Web Application Penetration Testing

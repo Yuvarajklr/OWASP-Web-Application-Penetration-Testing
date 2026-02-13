@@ -1,0 +1,6 @@
+Burp Suite
+Nmap
+Dirsearch
+SQLMap
+Firefox Developer Tools
+Manual Testing Techniques
