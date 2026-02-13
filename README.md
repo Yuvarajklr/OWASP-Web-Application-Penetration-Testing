@@ -1,6 +1,3 @@
-OWASP Juice Shop Web Application Penetration Testing Project
-Project Title
-
 OWASP Juice Shop Web Application Vulnerability Assessment and Penetration Testing
 
 Overview
