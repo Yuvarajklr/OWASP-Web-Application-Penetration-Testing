@@ -46,7 +46,7 @@ OWASP Web Application Penetration Testing
 └── Tools.txt
 
 
-Scope of Testing
+Scope of Testing:
 
 Target Application: OWASP Juice Shop
 
@@ -130,7 +130,7 @@ Certified Penetration Tester (CPT)
 
 Cybersecurity Enthusiast
 
-Disclaimer
+Disclaimer:
 
 This project is for educational and authorized testing purposes only.
 Do not test systems without permission.
