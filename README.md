@@ -1,4 +1,4 @@
-🛡️ OWASP Web Application Penetration Testing 
+ 🛡️ OWASP Web Application Penetration Testing 
 
 Poject Title
 
@@ -56,38 +56,40 @@ Testing Type: Web Application Penetration Testing
 
 Tools Used:
 
-Burp Suite
+ - Burp Suite
 
-OWASP ZAP
+ - OWASP ZAP
 
-Nmap
+ - Nmap
 
-Nikto
+ - Nikto
 
-Browser Developer Tools
+ - Browser Developer Tools
 
-Manual Payload Testing
+ - Manual Payload Testing
 
 Vulnerabilities Identified:
 
   A01 – Broken Access Control:
 
 
-   IDOR (Horizontal Privilege Escalation)
+   - IDOR (Horizontal Privilege Escalation)
 
-   Vertical Privilege Escalation (Admin Access)
+   - Vertical Privilege Escalation (Admin Access)
 
  A02 – Security Misconfiguration:
 
-   Directory Listing enabled
+   - Directory Listing enabled
     
-   Sensitive backup/configuration files exposed
+   - Sensitive backup/configuration files exposed
 
  A03 – Injection:
 
-   Cross-Site Scripting (XSS)
+   - Cross-Site Scripting (XSS)
 
-   SQL Injection (Authentication Bypass)
+   - SQL Injection (Authentication Bypass)
+
+Impact Summary:
 
 | Vulnerability              | Impact                         |
 | -------------------------- | ------------------------------ |
