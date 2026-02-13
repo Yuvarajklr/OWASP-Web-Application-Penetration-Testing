@@ -1,14 +1,15 @@
-🛡️ OWASP Web Application Penetration Testing Project
-oject Title
+🛡️ OWASP Web Application Penetration Testing 
 
-OWASP Juice Shop Web Application Vulnerability Assessment and Penetration Testing
+Poject Title
 
-Overview
+OWASP Web Application Vulnerability Assessment and Penetration Testing
+
+Overview:
 
 This repository contains a practical penetration testing project performed on OWASP Juice Shop, mapped to the OWASP Top 10:2025 security categories.
 The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation recommendations.
 
-Project Structure
+Project Structure:
 
 OWASP Web Application Penetration Testing
 ├── Broken_Access_Control
@@ -53,7 +54,7 @@ Environment: Localhost (http://localhost:3000)
 
 Testing Type: Web Application Penetration Testing
 
-Tools Used
+Tools Used:
 
 Burp Suite
 
@@ -67,24 +68,26 @@ Browser Developer Tools
 
 Manual Payload Testing
 
-Vulnerabilities Identified
-A01 – Broken Access Control
+Vulnerabilities Identified:
 
-IDOR (Horizontal Privilege Escalation)
+  A01 – Broken Access Control:
 
-Vertical Privilege Escalation (Admin Access)
 
-A02 – Security Misconfiguration
+   IDOR (Horizontal Privilege Escalation)
 
-Directory Listing enabled
+   Vertical Privilege Escalation (Admin Access)
 
-Sensitive backup/configuration files exposed
+ A02 – Security Misconfiguration:
 
-A03 – Injection
+   Directory Listing enabled
+    
+   Sensitive backup/configuration files exposed
 
-Cross-Site Scripting (XSS)
+ A03 – Injection:
 
-SQL Injection (Authentication Bypass)
+   Cross-Site Scripting (XSS)
+
+   SQL Injection (Authentication Bypass)
 
 | Vulnerability              | Impact                         |
 | -------------------------- | ------------------------------ |
@@ -94,21 +97,22 @@ SQL Injection (Authentication Bypass)
 | SQL Injection              | Full database compromise       |
 | Security Misconfiguration  | Internal configuration leakage |
 
-Remediation Recommendations
+Remediation Recommendations:
 
-Implement server-side Role-Based Access Control (RBAC)
+- Implement server-side Role-Based Access Control (RBAC)
 
-Use prepared statements / ORM for database queries
+- Use prepared statements / ORM for database queries
 
-Apply output encoding and Content Security Policy (CSP)
+- Apply output encoding and Content Security Policy (CSP)
 
-Disable directory listing
+- Disable directory listing
 
-Remove backup files from web root
+- Remove backup files from web root
 
-Follow secure deployment and DevSecOps practices
+- Follow secure deployment and DevSecOps practices
 
-How to Run OWASP Juice Shop
+How to Run OWASP Juice Shop:
+
 docker run -p 3000:3000 bkimminich/juice-shop
 
 
