@@ -30,14 +30,14 @@ OWASP-Web-Application-Penetration-Testing/
 │       ├── Evidence/
 │       └── Notes.md
 ├── Security_Misconfiguration/
-│   ├── Screenshots/
+│   ├── Evidence/
 │   └── Notes.md
 ├── OWASP_Web_Application_Penetration_Testing_Report.pdf
 ├── Scope.txt
 └── Tools.txt
 ```
 
-Scope of Testing
+##Scope of Testing
 
 Target Application: OWASP Juice Shop
 
@@ -45,7 +45,9 @@ Environment: Localhost (http://localhost:3000)
 
 Testing Type: Web Application Penetration Testing
 
-Tools Used
+---
+
+##Tools Used
 
 Burp Suite
 
@@ -59,7 +61,9 @@ Browser Developer Tools
 
 Manual Payload Testing
 
-Vulnerabilities Identified
+---
+
+##Vulnerabilities Identified
 A01 – Broken Access Control
 
 IDOR (Horizontal Privilege Escalation)
@@ -78,7 +82,10 @@ Cross-Site Scripting (XSS)
 
 SQL Injection (Authentication Bypass)
 
-Impact Summary
+---
+
+##Impact Summary
+
 | Vulnerability              | Impact                         |
 | -------------------------- | ------------------------------ |
 | IDOR                       | User data exposure             |
@@ -87,7 +94,9 @@ Impact Summary
 | SQL Injection              | Full database compromise       |
 | Security Misconfiguration  | Internal configuration leakage |
 
-Remediation Recommendations
+---
+
+##Remediation Recommendations
 
 Implement server-side Role-Based Access Control (RBAC)
 
@@ -101,20 +110,26 @@ Remove backup files from web root
 
 Follow secure deployment and DevSecOps practices
 
-How to Run OWASP Juice Shop
+---
+
+##How to Run OWASP Juice Shop
 docker run -p 3000:3000 bkimminich/juice-shop
 
 Open in browser:
 
 http://localhost:3000
 
-Author
+---
+
+##Author
 
 Yuvaraj S
 Certified Penetration Tester (CPT)
 Cybersecurity Enthusiast
 
-Disclaimer
+---
+
+##Disclaimer
 
 This project is for educational and authorized testing only.
 Do not test systems without explicit permission.
