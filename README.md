@@ -1,51 +1,43 @@
- 🛡️ OWASP Web Application Penetration Testing 
+# 🛡️ OWASP Web Application Penetration Testing
 
-Poject Title
+## Project Title  
+**OWASP Web Application Vulnerability Assessment and Penetration Testing**
 
-OWASP Web Application Vulnerability Assessment and Penetration Testing
+---
 
-Overview:
+## Overview  
+This repository contains a practical web application penetration testing project conducted on **OWASP Juice Shop**, mapped to **OWASP Top 10:2025**.  
+The project demonstrates real-world vulnerabilities, exploitation techniques, impact analysis, and remediation strategies.
 
-This repository contains a practical penetration testing project performed on OWASP Juice Shop, mapped to the OWASP Top 10:2025 security categories.
-The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation recommendations.
+---
 
-Project Structure:
+## Project Structure
 
-OWASP Web Application Penetration Testing/
+```text
+OWASP-Web-Application-Penetration-Testing/
 ├── Broken_Access_Control/
 │   ├── IDOR_Horizontal_Privilege_Escalation/
 │   │   ├── Evidence/
-│   │   │   ├── idor_original_user_basket.png
-│   │   │   └── idor_other_user_basket.png
 │   │   └── Notes.md
 │   └── IDOR_Vertical_Privilege_Escalation/
 │       ├── Evidence/
-│       │   ├── idor_admin_panel_access.png
-│       │   ├── idor_hidden_admin_path.png
-│       │   └── idor_payload.png
 │       └── Notes.md
 ├── Injection/
 │   ├── Cross_Site_Scripting_XSS/
 │   │   ├── Evidence/
-│   │   │   ├── xss_execution.png
-│   │   │   └── xss_payload.png
 │   │   └── Notes.md
-│   └── SQL Injection/
+│   └── SQL_Injection/
 │       ├── Evidence/
-│       │   ├── sqli_admin_access.png
-│       │   └── sqli_payload.png
 │       └── Notes.md
 ├── Security_Misconfiguration/
-│   ├── Notes.md
-│   └── Evidence/
-│   │   ├── misconfig_directory_listing.png
-│   │   ├── misconfig_ftp_access.png
-│   │   └── misconfig_md_file_exposure.png
-├── OWASP Web Application Penetration Testing Report.pdf
+│   ├── Screenshots/
+│   └── Notes.md
+├── OWASP_Web_Application_Penetration_Testing_Report.pdf
 ├── Scope.txt
 └── Tools.txt
+```
 
-Scope of Testing:
+Scope of Testing
 
 Target Application: OWASP Juice Shop
 
@@ -53,43 +45,40 @@ Environment: Localhost (http://localhost:3000)
 
 Testing Type: Web Application Penetration Testing
 
-Tools Used:
+Tools Used
 
- - Burp Suite
+Burp Suite
 
- - OWASP ZAP
+OWASP ZAP
 
- - Nmap
+Nmap
 
- - Nikto
+Nikto
 
- - Browser Developer Tools
+Browser Developer Tools
 
- - Manual Payload Testing
+Manual Payload Testing
 
-Vulnerabilities Identified:
+Vulnerabilities Identified
+A01 – Broken Access Control
 
-  A01 – Broken Access Control:
+IDOR (Horizontal Privilege Escalation)
 
+Vertical Privilege Escalation (Admin Access)
 
-   - IDOR (Horizontal Privilege Escalation)
+A02 – Security Misconfiguration
 
-   - Vertical Privilege Escalation (Admin Access)
+Directory listing enabled
 
- A02 – Security Misconfiguration:
+Sensitive backup/config files exposed
 
-   - Directory Listing enabled
-    
-   - Sensitive backup/configuration files exposed
+A03 – Injection
 
- A03 – Injection:
+Cross-Site Scripting (XSS)
 
-   - Cross-Site Scripting (XSS)
+SQL Injection (Authentication Bypass)
 
-   - SQL Injection (Authentication Bypass)
-
-Impact Summary:
-
+Impact Summary
 | Vulnerability              | Impact                         |
 | -------------------------- | ------------------------------ |
 | IDOR                       | User data exposure             |
@@ -98,38 +87,34 @@ Impact Summary:
 | SQL Injection              | Full database compromise       |
 | Security Misconfiguration  | Internal configuration leakage |
 
-Remediation Recommendations:
+Remediation Recommendations
 
-- Implement server-side Role-Based Access Control (RBAC)
+Implement server-side Role-Based Access Control (RBAC)
 
-- Use prepared statements / ORM for database queries
+Use prepared statements / ORM
 
-- Apply output encoding and Content Security Policy (CSP)
+Apply output encoding and Content Security Policy (CSP)
 
-- Disable directory listing
+Disable directory listing
 
-- Remove backup files from web root
+Remove backup files from web root
 
-- Follow secure deployment and DevSecOps practices
+Follow secure deployment and DevSecOps practices
 
-How to Run OWASP Juice Shop:
-
+How to Run OWASP Juice Shop
 docker run -p 3000:3000 bkimminich/juice-shop
-
 
 Open in browser:
 
 http://localhost:3000
 
-Author:
+Author
 
 Yuvaraj S
-
 Certified Penetration Tester (CPT)
-
 Cybersecurity Enthusiast
 
-Disclaimer:
+Disclaimer
 
-This project is for educational and authorized testing purposes only.
-Do not test systems without permission.
+This project is for educational and authorized testing only.
+Do not test systems without explicit permission.
