@@ -6,7 +6,7 @@
 ---
 
 ## Overview  
-This repository contains a practical web application penetration testing project conducted on **OWASP Juice Shop**, mapped to **OWASP Top 10:2025**.  
+This repository contains a practical web application penetration testing project conducted on **OWASP Juice Shop**, mapped to **OWASP Top 10**.  
 The project demonstrates real-world vulnerabilities, exploitation techniques, impact analysis, and remediation strategies.
 
 ---
@@ -125,7 +125,9 @@ http://localhost:3000
 ## Author
 
 Yuvaraj S
+
 Certified Penetration Tester (CPT)
+
 Cybersecurity Enthusiast
 
 ---
