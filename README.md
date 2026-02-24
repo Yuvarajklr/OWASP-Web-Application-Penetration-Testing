@@ -10,7 +10,6 @@ This repository contains a practical penetration testing project performed on OW
 The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation recommendations.
 
 Project Structure:
-
 OWASP Web Application Penetration Testing
 ├── Broken_Access_Control
 │   ├── IDOR_Horizontal_Privilege_Escalation
@@ -44,8 +43,6 @@ OWASP Web Application Penetration Testing
 ├── OWASP Web Application Penetration Testing Report.pdf
 ├── Scope.txt
 └── Tools.txt
-
-
 Scope of Testing:
 
 Target Application: OWASP Juice Shop
