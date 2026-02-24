@@ -10,39 +10,41 @@ This repository contains a practical penetration testing project performed on OW
 The project demonstrates real-world web vulnerabilities, exploitation techniques, impact analysis, and remediation recommendations.
 
 Project Structure:
-OWASP Web Application Penetration Testing
-├── Broken_Access_Control
-│   ├── IDOR_Horizontal_Privilege_Escalation
-│   │   ├── Evidence
+
+OWASP Web Application Penetration Testing/
+├── Broken_Access_Control/
+│   ├── IDOR_Horizontal_Privilege_Escalation/
+│   │   ├── Evidence/
 │   │   │   ├── idor_original_user_basket.png
 │   │   │   └── idor_other_user_basket.png
 │   │   └── Notes.md
-│   └── IDOR_Vertical_Privilege_Escalation
-│       ├── Evidence
+│   └── IDOR_Vertical_Privilege_Escalation/
+│       ├── Evidence/
 │       │   ├── idor_admin_panel_access.png
 │       │   ├── idor_hidden_admin_path.png
 │       │   └── idor_payload.png
 │       └── Notes.md
-├── Injection
-│   ├── Cross_Site_Scripting_XSS
-│   │   ├── Evidence
+├── Injection/
+│   ├── Cross_Site_Scripting_XSS/
+│   │   ├── Evidence/
 │   │   │   ├── xss_execution.png
 │   │   │   └── xss_payload.png
 │   │   └── Notes.md
-│   └── SQL Injection
-│       ├── Evidence
+│   └── SQL Injection/
+│       ├── Evidence/
 │       │   ├── sqli_admin_access.png
 │       │   └── sqli_payload.png
 │       └── Notes.md
-├── Security_Misconfiguration
+├── Security_Misconfiguration/
 │   ├── Notes.md
-│   └── Screenshots
+│   └── Evidence/
 │   │   ├── misconfig_directory_listing.png
 │   │   ├── misconfig_ftp_access.png
 │   │   └── misconfig_md_file_exposure.png
 ├── OWASP Web Application Penetration Testing Report.pdf
 ├── Scope.txt
 └── Tools.txt
+
 Scope of Testing:
 
 Target Application: OWASP Juice Shop
